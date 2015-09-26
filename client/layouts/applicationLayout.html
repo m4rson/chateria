@@ -1,0 +1,23 @@
+<template name='ApplicationLayout'>
+
+    <div id='main'>
+
+         <header>
+         	{{>header}}
+         </header>
+
+         <div id='userNav'>
+            {{>userNav}}
+         </div>
+
+         
+         <div id='container'>
+
+             {{>yield}}
+
+         </div>
+       
+    </div>
+
+
+</template>

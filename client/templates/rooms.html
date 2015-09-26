@@ -1,0 +1,21 @@
+<template name='rooms'>
+
+<div class='rooms'>
+   <div>
+     <input type='text' name='name' placeholder='Add new room ' class='newRoom' /> 
+     <button class='addRoomSubmit inputRoom'> Add </button>
+   </div>
+
+   <h1>Available rooms </h1>
+
+   <ul>
+   {{#each rooms}}
+   	<li> 
+      <a href="{{pathFor ':name'}}" class='roomLink'>{{name}} </a> -  added by <i>{{owner}}</i>
+      {{#if isOwner}}<button class='deleteRoom'> Delete </button>{{/if}}
+      </li>
+   {{/each}}
+   </ul>
+
+</div>
+</template>

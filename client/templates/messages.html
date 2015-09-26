@@ -1,0 +1,27 @@
+<template name='messages'>
+
+    <div class='messageForm'>
+      
+       		<div>
+             <input type='text' class='messageText messageInput' placeholder='Type your message here...' />
+             <button class='sendMessage'> Send </button>
+          </div>
+    
+    </div>
+
+    <div class='messageBox'>
+
+    
+       {{#each messages}}
+      
+       	    <div class='usernameField'> <img src='avatar2.png'>{{username}} <i>says:</i></div>
+            <div class='messageField'> {{messageText}} </div>
+         
+       	  
+        {{/each}}
+       
+
+    </div>
+
+
+</template>

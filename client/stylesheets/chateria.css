@@ -1,0 +1,274 @@
+/* CSS declarations go here */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	/*background: url('../images/bg.png');*/
+	background: #fff;
+}
+
+#main{
+	margin: 0 auto;
+	width: 80%;
+
+}
+
+header{
+	width: 100%;
+	height: auto;
+	text-align: center;
+
+
+}
+
+#userNav{
+    max-width: 100%;
+    text-align: center;
+    background: #252525;
+    color: #ddd;
+}
+
+#userNav .logoutButton{
+	border:none;
+	height: 20px;
+	background: #570606;
+	color: #808080;
+	cursor: pointer;
+}
+
+#userNav .logoutButton:hover{
+	background: #9C0606;
+	color: #252525;
+}
+
+#container{
+	margin: 0 auto;
+	width: 100%;
+}
+
+#container .inputs{
+
+	width: 75%;
+	height: 25px;
+	padding: 5px;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+#container .inputs:focus{
+	background: #252525;
+	color: #eee;
+
+}
+
+#container .inputSubmit{
+	width: 78%;
+	height: 30px;
+	border: none;
+	background: #353533;
+	color: #ddd;
+
+}
+
+#container .inputSubmit:hover{
+	background: #353522;
+	color: #879859;
+        cursor: pointer;
+}
+
+#container .loginDiv{
+	margin: 0 auto;
+	width: 50%;
+}
+
+#container .registerDiv{
+	margin-top: 25px;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.rooms{
+	margin: 0 auto;
+	width: 50%;
+}
+
+.rooms .newRoom{
+	width: 75%;
+	height: 20px;
+	padding: 2px;
+}
+
+.rooms .inputRoom{
+	width: 60px;
+	height: 25px;
+	border: none;
+	background: #335112;
+	color: 888;
+}
+
+.rooms .inputRoom:hover{
+	background: #335388;
+	color: 999;
+        cursor: pointer;
+}
+
+
+.messageForm .messageInput{
+	width: 87%;
+	height: 25px;
+	padding: 5px;
+	border: none;
+	background: #151515;
+	color: #ddd;
+}
+
+.messageForm .sendMessage{
+	width: 9%;
+	height: 30px;
+	border: none;
+	background: #0D3009;
+	color: #ddd;
+}
+.messageForm .sendMessage:hover{
+	background: #15570E;
+	color: #000;
+        cursor: pointer;
+}
+
+.messageBox{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 500px;
+}
+
+.messageBox .usernameField{
+	background: #ddd;
+	text-align: center;
+	color:#000;
+}
+
+
+.messageBox .messageField{
+	width:100%;
+	background: #eee;
+	color: #252525;
+}
+
+.leaveRoomButton{
+	width: 20%;
+	height: 20px;
+	border:none;
+	background: #570606;
+	color: #808080;
+
+}
+
+.leaveRoomButton:hover{
+    background: #9C0606;
+    color: #252525;
+}
+
+.rooms ul li{
+	list-style: none;
+	padding: 10px;
+}
+
+.rooms ul li a:link, a:visited{
+	font-family: Arial;
+	font-size: 22px;
+	color: #252525;
+	text-decoration: none;
+}
+
+.rooms ul li a:hover{
+	color: #042E05;
+	text-decoration: underline;
+}
+
+
+/*   -----------media queries-----------  */
+
+
+
+
+@media screen and (max-width: 700px){
+	#main{
+		width: 95%;
+	}
+	header{
+		width: 100%;
+
+	}
+
+	header img{
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: 701px) and (max-width: 850px){
+    #main{
+       width: 95%;
+  }
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 699px){
+
+   	#main{
+		width: 95%;
+	}
+	header{
+		width: 100%;
+	}
+	header img{
+		max-width: 100%;
+	}
+
+	.box .input_box ul li{
+		display: block;
+	}
+
+	.box .input_box input[type=text]{
+		width: 100%;
+		border-bottom: 1px solid #000;
+
+	}
+
+	.box .input_box input[type=submit]{
+
+		width: 100%;
+	}
+
+}
+
+
+@media screen and (max-width: 320px){
+	#main{
+		width: 95%;
+	}
+	header{
+		width: 100%;
+	}
+	header img{
+		max-width: 100%;
+	}
+
+	.box .input_box ul li{
+		display: block;
+	}
+
+	.box .input_box input[type=text]{
+		width: 100%;
+		border-bottom: 1px solid #000;
+
+	}
+
+	.box .input_box input[type=submit]{
+
+		width: 100%;
+	}
+
+
+}

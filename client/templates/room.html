@@ -1,0 +1,15 @@
+<template name='room'>
+<!--<button class='goBack' > Leave Room </button>-->
+
+<div style='text-align:center;'>
+ <img src='exit.png' class='exitRoom' title='Double click to leave room'>
+  <h3>You are in <span style='color:green'>{{name}}</span> room </h3>
+  <!--<button class='leaveRoomButton'> Leave Room </button>-->
+
+</div>
+
+    <div class='messages'>
+         {{>messages}}
+    </div>
+
+</template>
